@@ -1,5 +1,6 @@
 import React from 'react';
 import './navbar.css';
+import { Link } from "react-router-dom"
 
 function Navbar() {
   return (
@@ -12,7 +13,7 @@ function Navbar() {
         <a href="#">Sobre mí</a>
         <a href="#">Contacto</a>
       </nav>
-      <a className="boton-login" href="#">Iniciar Sesión</a>
+      <Link to="/login">Iniciar Sesión</Link>
     </header>
   );
 }
